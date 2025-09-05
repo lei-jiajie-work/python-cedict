@@ -12,3 +12,6 @@ Requires io, re, and json libraries.
 4. Unzip cc-cedict u8 file
 5. Put the cc-cedict u8 file into the same directory as the python script.
 6. Use terminal emulator
+
+
+!(screenshot on linux)[https://github.com/lei-jiajie-work/python-cedict/blob/main/image.png]
