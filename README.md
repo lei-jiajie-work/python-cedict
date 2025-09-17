@@ -3,7 +3,7 @@ A small python script to parse cc-cedict data.
 
 
 Requires Python3.
-Requires io, re, and json libraries.
+Requires json library.
 
 
 1. Download as zip
