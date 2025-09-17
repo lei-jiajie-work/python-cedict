@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import json
 
 diction = open("cedict_ts.u8", "rt").read().split('\n')
