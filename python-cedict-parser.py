@@ -1,10 +1,15 @@
 #!/usr/bin/env python3
 import json
+import os
+from pathlib import Path
 
-diction = open("cedict_ts.u8", "rt").read().split('\n')
+scriptpath = os.path.dirname(os.path.realpath(__file__))
+diction = ""
+if Path(scriptpath + "/cedict_ts.u8").exists():
+    diction = open(scriptpath + "/cedict_ts.u8", "rt").read().split('\n')
 limit = 5
 
-with open('cedict-cfg.json', 'rt') as cfg:
+with open(scriptpath + '/cedict-cfg.json', 'rt') as cfg:
     cfg_data = json.load(cfg)
     limit = cfg_data["limit"]
     diction = open(cfg_data["dictionary_path"], "rt").read().split('\n')
